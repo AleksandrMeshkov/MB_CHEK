@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ProfProject.MainWindow"
+        Title="ProfProject" Background="Bisque" Width="400" Height="700">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,50" FontSize="25">Авторизация</TextBlock>
+        <TextBlock x:Name="ErorBlock" HorizontalAlignment="Center" TextInput="ErorTB" ></TextBlock>
+        <TextBlock HorizontalAlignment="Center">Введите логин</TextBlock>
+        <TextBox x:Name="PsdBox" Width="150" Height="10" TextChanged="PsdTextChanged"></TextBox>
+        <TextBlock Margin="0,0,0,10" HorizontalAlignment="Center">Введите пароль</TextBlock>
+        <TextBox x:Name="LgBox" Width="150" Height="10" TextChanged="LgTextChanged"></TextBox>
+        <Button x:Name = "SignBtn" HorizontalAlignment="Center" Margin="0,5,0,0" Click="ButtonClicked">Войти</Button>
+        <HyperlinkButton HorizontalAlignment="Center" Click="LinkClicked">Зарегестрироваться</HyperlinkButton>
+    </StackPanel>
+</Window>
+
